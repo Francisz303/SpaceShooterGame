@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="main.js" async></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div id="logo">SPACE SHOOTER</div>
+      </header>
+      <nav>
+        <div class="score-window">
+          <div id="score">
+            <span>SCORE</span>
+            <span>00000</span>
+          </div>
+          <div id="highscore">
+            <span>RECORD</span>
+            <span>00000</span>
+          </div>
+        </div>
+        <div id="themes-window">
+          <button id="btn-themes">
+            <img id="theme" src="/img/dark_mode.svg" alt="" />
+          </button>
+        </div>
+      </nav>
+      <main>
+        <div id="boardgame">
+          <div id="starting-window">
+            <button id="btn-starting-game">START GAME</button>
+          </div>
+          <div id="ending-window">
+            <span>GAME OVER</span>
+            <div class="score-window">
+              <div id="final-score">
+                <span>SCORE</span>
+                <span>00000</span>
+              </div>
+              <div id="final-highscore">
+                <span>RECORD</span>
+                <span>00000</span>
+              </div>
+            </div>
+            <div id="try-again">
+              <button id="btn-try-again">
+                <img src="/img/dark_try_again.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div id="bullet" class="bullet">
+            <img src="/img/dark_laser_bullet.svg" alt="" />
+          </div>
+          <div id="player">
+            <img src="/img/dark_spaceship1.svg" alt="" />
+          </div>
+          <div id="enemy" class="enemy"></div>
+          <div id="life-window">
+            <img src="/img/dark_heart.svg" alt="dark heart" />
+            <img src="/img/dark_heart.svg" alt="dark heart" />
+            <img src="/img/dark_heart.svg" alt="dark heart" />
+          </div>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>

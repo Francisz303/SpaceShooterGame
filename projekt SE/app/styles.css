@@ -1,0 +1,208 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Micro 5", sans-serif;
+  color: #535353;
+  margin: 0;
+  height: 100%;
+  font-size: 1.5rem;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  padding: 10px;
+  font-size: 3rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 5px 16px;
+}
+
+.score-window {
+  display: flex;
+}
+
+.score-window > div {
+  display: flex;
+}
+
+.score-window span {
+  display: inline-block;
+  padding: 10px 5px;
+}
+
+#score {
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+#highscore {
+  margin-left: 0.5rem;
+  display: inline-block;
+}
+
+#themes-window {
+  padding: 10px 5px;
+  height: 52px;
+}
+
+#btn-themes {
+  all: unset;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#boardgame {
+  width: 720px;
+  height: 480px;
+  border: #535353 solid 2px;
+  background: url(../img/light_pattern.svg) repeat 300%;
+  background-position-y: 0;
+  background-size: 90%;
+  position: relative;
+  overflow: hidden; /* bardzo ważne! */
+}
+
+#starting-window {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: #535353 solid 2px;
+}
+
+#btn-starting-game {
+  all: unset;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#ending-window {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 5px;
+  border: #535353 solid 2px;
+  width: auto;
+  z-index: 100;
+}
+
+#ending-window > span {
+  padding: 5px;
+}
+
+#final-score {
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+#final-record {
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+#try-again {
+  height: 41.5px;
+  padding: 5px;
+}
+
+#btn-try-again {
+  all: unset;
+  width: 34.5px;
+  max-height: 31.5px;
+  cursor: pointer;
+}
+
+#btn-try-again > img {
+  width: 34.5px;
+  height: 31.5px;
+}
+
+#bullet {
+  display: none;
+}
+
+.bullet {
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.bullet > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#player {
+  position: absolute;
+  bottom: 10px;
+  height: 58px;
+}
+
+#player > img {
+  width: 46px;
+  height: 58px;
+}
+
+.enemy {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  height: 42px;
+}
+
+.enemy > img {
+  width: 79.5px;
+  height: 42px;
+}
+
+#life-window {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#life-window > img {
+  width: 19.5px;
+  height: 18px;
+}
+
+footer {
+  height: 242px;
+}
