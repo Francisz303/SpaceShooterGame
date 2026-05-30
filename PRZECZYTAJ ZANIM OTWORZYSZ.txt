@@ -1,0 +1,1 @@
+Aby gra poprawnie działała w Vsual Studio Code dodaj extension Live Server
