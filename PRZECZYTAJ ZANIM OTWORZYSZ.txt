@@ -1,1 +1,3 @@
 Aby gra poprawnie działała w Vsual Studio Code dodaj extension Live Server
+
+Porusznie strzałkami lewo prawo, strzelanie spacja
